@@ -31,11 +31,11 @@ public class Conditiona10perationExample {
 						s="C";
 					}else if(score>60) {
 						s="D";
-					}else{
+					}else {
 						s="F";
 					}
 					System.out.println(score +"점은"+s+"등급입이다");
-					continue;
+		
 					}
 		}	
 	}
