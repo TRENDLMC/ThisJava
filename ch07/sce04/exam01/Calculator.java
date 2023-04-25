@@ -1,0 +1,12 @@
+package ch07.sce04.exam01;
+
+public class Calculator {
+	
+	public double areaCircle(double r) {
+		System.out.println("calculator 객체의 areaCircle()실행");
+		
+		return 3.14159*r*r; 
+		
+	}
+
+}
