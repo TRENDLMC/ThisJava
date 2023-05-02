@@ -1,5 +1,7 @@
 package ch09.sec07.exam01;
 
+import java.util.Optional;
+
 public class Car {
 	//필드에 Tire 객체대입
 	private Tire tire1=new Tire();

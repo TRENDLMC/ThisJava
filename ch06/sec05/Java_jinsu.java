@@ -13,5 +13,6 @@ public class Java_jinsu {
 		System.out.println("2진수는"+Integer.toBinaryString(jin));
 		System.out.println("8진수는"+Integer.toOctalString(jin));
 		System.out.println("16진수는"+Integer.toHexString(jin));
+		System.out.println();
 }
 }

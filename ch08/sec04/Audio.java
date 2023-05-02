@@ -16,13 +16,13 @@ public class Audio implements RemoteControl{
 	@Override
 	public void setVolume(int volume) {
 		if(volume<RemoteControl.MIN_volume) {
-			this.volume=MIN_volume;
+			volume=MIN_volume;
 		}else if(volume>RemoteControl.MAX_volume) {
-			this.volume=MAX_volume;
+			volume=MAX_volume;
 		}else {
 			this.volume=volume;
 		}
-		System.out.println("현재볼륨은"+volume+"입니다");
+		System.out.println("현재볼륨은"+this.volume+"입니다");
 		
 	}
 
