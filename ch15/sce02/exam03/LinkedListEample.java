@@ -16,24 +16,41 @@ public class LinkedListEample {
 		//arraylist 컬렉션에저장하는 시간측정
 		startTime=System.nanoTime();
 		for (int i = 0; i < 10000; i++) {
-			list1.add(0,String.valueOf(i));
+			list1.add(i,String.valueOf(i));
 			//add(0,<<은 저장한인덱스이다)
 		}
 		endTime =System.nanoTime();
-		System.out.printf("%-17s %8d ns \n","arraylist걸린시간",(endTime-startTime));
-		
-		String a=list1.get(0);
-		System.out.println(a);
-		
-		
+		System.out.printf("%-17s %8d ns \n","arraylist걸린시간",(endTime-startTime));	
 		//Linkedlist 컬렉션에저장하는 시간측정
 		
 		startTime=System.nanoTime();
 		for (int i = 0; i < 10000; i++) {
-			list2.add(0,String.valueOf(i));
+			list2.add(i,String.valueOf(i));
 		}
 		endTime =System.nanoTime();
 		System.out.printf("%-17s %8d ns \n","Linkedlist걸린시간",(endTime-startTime));
+		
+		
+		
+		startTime=System.nanoTime();
+		for (int i = 0; i < 10000; i++) {
+			System.out.println(list1.get(i));
+		}
+		
+		endTime =System.nanoTime();
+		System.out.printf("%-17s %8d ns \n","Linkedlist걸린시간",(endTime-startTime));
+		
+		
+		startTime=System.nanoTime();
+		
+		for (int i = 0; i < 10000; i++) {
+			System.out.println(list2.get(i));
+		}
+		endTime =System.nanoTime();
+		System.out.printf("%-17s %8d ns \n","Linkedlist걸린시간",(endTime-startTime));
+	//	43558600
+	//  93118100
+		
 	}
 
 }
