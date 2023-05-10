@@ -1,0 +1,29 @@
+package ch18.sec04.exam01;
+
+import java.io.FileWriter;
+import java.io.Writer;
+
+public class WriteExample {
+	public static void main(String[] args) {
+		try {
+			Writer writer=new FileWriter("C:/Temp/asdd.txt");
+			
+			char a='A';
+			char b='B';
+			writer.write(a);
+			writer.write(b);
+			
+			char[] arr= {'C','D','E'};
+			writer.write(arr);
+			
+			writer.write("FGH");
+			
+			writer.flush();
+			writer.close();
+			
+		}catch (Exception e) {
+		e.printStackTrace();
+		}
+	}
+
+}
